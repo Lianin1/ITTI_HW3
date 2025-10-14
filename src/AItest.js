@@ -213,15 +213,15 @@ export default function AItest({
 // HW2 修改：更新了整個 styles 物件的內容，包括顏色、圓角、陰影、字體等，液態玻璃效果
 const styles = {
   // NEW: 專門用於全螢幕佈局和背景漸層的容器
-  // container: {
-  //   display: 'grid',
-  //   placeItems: 'center',
-  //   padding: 24,
-  //   minHeight: '100vh',
-  //   background: 'linear-gradient(135deg, #383333ff 0%, #f9fafb 100%)',
-  //   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
-  //   color: '#333',
-  // },
+  container: {
+    display: 'grid',
+    placeItems: 'center',
+    padding: 24,
+    minHeight: '100vh',
+    background: 'linear-gradient(135deg, #383333ff 0%, #f9fafb 100%)',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+    color: '#333',
+  },
   // 原本的 card 樣式現在只包含玻璃擬態的外觀屬性
   card: {
     width: 'min(900px, 95%)',
