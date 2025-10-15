@@ -151,7 +151,7 @@ export default function GoogleMapsSearch() {
             </label>
           </div>
           
-          {/* 舊的「搜尋設定」區塊已移除 */}
+          
 
         </div>
         
