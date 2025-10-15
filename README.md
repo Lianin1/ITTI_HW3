@@ -70,7 +70,7 @@ if (el) {
 - React 區塊的主入口，提供兩顆按鈕在兩個功能間切換：
   - `AItest`：Gemini 對話
   - `GoogleMapsSearch`：地點資訊搜尋
-<br><br><img src="Photo/1.png" width="25%"><br><br>
+<br><br><img src="Photo/1.png" width="40%"><br><br>
 - 用一個 `activeView` 狀態記錄目前顯示哪個頁面，並透過 `renderView()` 決定要渲染哪個元件。
 
 
@@ -94,7 +94,7 @@ const renderView = () => {
 ### [`src/AItest.js`](src/AItest.js)（Gemini Chat）
 - 提供聊天介面：輸入訊息 → 呼叫 Gemini `generateContent` → 以 Markdown 顯示回覆。
 - 從 `localStorage` 讀寫 `gemini_api_key`，方便使用者重用金鑰（僅儲存在本機）。
-<br><br><img src="Photo/2.png" width="40%"><br><br>
+<br><br><img src="Photo/2.png" width="75%"><br><br>
 - 關鍵呼叫流程：
 
 ```69:93:src/AItest.js
@@ -110,7 +110,7 @@ const response = await fetch(apiUrl, {
 ### [`src/map.js`](src/map.js)（地點資訊搜尋）
 - 讓 AI 扮演「地點搜尋助理」，並啟用 `google_search` 工具先上網查最新資料，再以 Markdown 清單回覆。
 - 只有文字與清單呈現，沒有地圖渲染；因此不需載入 Google Maps/Places SDK。
-<br><br><img src="Photo/3.png" width="40%"><br><br>
+<br><br><img src="Photo/3.png" width="75%"><br><br>
 - 指數退避重試（處理 429/5xx）：
 
 ```72:89:src/map.js
